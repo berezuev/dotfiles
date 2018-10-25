@@ -11,10 +11,10 @@
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
-  
-  pl = pull
-  ps = push
-  
-  f = fetch
+
+ 	pl = pull
+	ps = push
+
+	f = fetch
 	fo = fetch origin
 	fu = fetch upstream

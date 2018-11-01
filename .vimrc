@@ -1,6 +1,5 @@
 set number
 set showmatch
-set spell
 set visualbell
 set hlsearch
 set smartcase	

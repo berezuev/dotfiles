@@ -9,3 +9,7 @@ function streamer() {
 alias such=git
 alias very=git
 alias wow='git status'
+
+# Pretty format xml from STDIN. Package libxml2-utils required.
+# origin: https://stackoverflow.com/a/16090892/2254668
+alias xmlf='xmllint --format -'

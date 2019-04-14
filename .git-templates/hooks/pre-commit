@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Check if you have 'WIP' markers in code before commit to prevent debug code and info on remote git.
-if grep -i -n 'wip' `git ls-files -om --exclude-standard`; then
+if grep -i -n 'wip' `git diff HEAD --cached --name-only`; then
     read -p "You're about to add a WIP commit, do you want to run the CI? [y|n] " -n 1 -r < /dev/tty
     echo
     if echo $REPLY | grep -E '^[Nn]$' > /dev/null; then

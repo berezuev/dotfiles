@@ -19,7 +19,8 @@
 	ci = commit
 	cia = commit --amend
 	st = status --short --branch
-	br = branch
+	br = branch 
+	brc = rev-parse --abbrev-ref HEAD #Show current branch
 	hist = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
 	type = cat-file -t
 	dump = cat-file -p

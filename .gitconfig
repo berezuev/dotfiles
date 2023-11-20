@@ -35,3 +35,6 @@
         permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
 	please = push --force-with-lease
 	uncommit = reset --soft HEAD~1
+        puh = push -u origin HEAD
+        pluh = push --force-with-lease -u origin HEAD
+

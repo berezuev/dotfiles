@@ -1,7 +1,21 @@
 # dot files
-This is my own bash, git and vim configs, hooks and aliases.
+This is my own bash, git and vim configs, hooks and aliases. Seems to be useless for anyone else.
 
-# add .gitignore to config
+## base tools
+```bash
+sudo apt install \
+  git \
+  mc \
+  htop \
+  xclip \
+  lynx \
+  telnet \
+  netcat \
+  bat \
+  graphviz
+```
+
+## add .gitignore to config
 ```bash
 git config --global core.excludesfile ~/.gitignore
 ```

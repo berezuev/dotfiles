@@ -1,3 +1,4 @@
 export PS1="\[\e[01;36m\][\t]\[\e[0m\]\[\e[00;37m\] \[\e[0m\]\[\e[00;33m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[00;32m\]\h\[\e[0m\]\[\e[00;37m\]:\[\e[0m\]\[\e[00;32m\]\w\[\e[0m\]\[\e[00;37m\]\\$ \[\e[0m\]"
 
 alias cdtmp='cd `mktemp -d`'
+alias clip='xclip -selection clipboard'

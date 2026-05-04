@@ -12,7 +12,8 @@ sudo apt install \
   telnet \
   netcat \
   bat \
-  graphviz
+  graphviz \
+  git-delta
 ```
 
 ## add .gitignore to config

@@ -3,6 +3,7 @@
 [core]
 	autocrlf = false
 	editor = vim
+    pager = delta
 [color]
 	ui = auto
 [color "branch"]
@@ -14,6 +15,8 @@
 	frag = magenta bold
 	old = red bold
 	new = green bold
+[interactive]
+    diffFilter = delta --color-only
 [alias]
 	co = checkout
 	ci = commit
@@ -38,3 +41,27 @@
         puh = push -u origin HEAD
         pluh = push --force-with-lease -u origin HEAD
 
+[delta]
+    decorations = true
+    line-numbers = true
+    syntax-theme = Monokai Extended
+    navigate = true
+    light = false
+
+    minus-style = red bold
+    plus-style = green bold
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = yellow box ul
+    commit-style = yellow bold
+    file-decoration-style = yellow ul
+    file-style = yellow bold
+    hunk-header-decoration-style = blue box
+    hunk-header-style = blue bold
+
+[delta "line-numbers"]
+    line-numbers-left-style = blue
+    line-numbers-right-style = blue
+    line-numbers-minus-style = red
+    line-numbers-plus-style = green

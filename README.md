@@ -13,7 +13,8 @@ sudo apt install \
   netcat \
   bat \
   graphviz \
-  git-delta
+  git-delta \
+  ncdu
 ```
 
 ## add .gitignore to config

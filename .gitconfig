@@ -34,12 +34,14 @@
 	f = fetch
 	fo = fetch origin
 	fu = fetch upstream
+    fr = !git fetch && git rebase -i origin/$1
+    frm = !git fetch && git rebase -i origin/master
 	
-        permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+    permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
 	please = push --force-with-lease
 	uncommit = reset --soft HEAD~1
-        puh = push -u origin HEAD
-        pluh = push --force-with-lease -u origin HEAD
+    puh = push -u origin HEAD
+    pluh = push --force-with-lease -u origin HEAD
 
 [delta]
     decorations = true
